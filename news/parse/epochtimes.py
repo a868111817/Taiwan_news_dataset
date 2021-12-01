@@ -286,6 +286,41 @@ ARTICLE_SUB_PATTERNS: List[Tuple[re.Pattern, str]] = [
         re.compile(r'文:\S*?$'),
         '',
     ),
+    # This observation is made with `url_pattern = 17-12-17-9966544.
+    (
+        re.compile(r'#\s文字整理:(:?.*?)[^\w]$'),
+        '',
+    ),
+    # This observation is made with `url_pattern = 17-12-17-9998261.
+    (
+        re.compile(r'#?$'),
+        '',
+    ),
+    # This observation is made with `url_pattern = 17-12-8-9939063.
+    (
+        re.compile(r'https://i.epochtimes.com/assets/uploads/2017/12/[\w]+(.mp4)'
+        ),
+        '',
+    ),
+    # This observation is made with `url_pattern = 17-12-23-9987132.
+    (
+        re.compile(r'新唐人《2018跨年繽紛夜》播出時間:(.)*'
+        ),
+        '',
+    ),
+    # This observation is made with `url_pattern = 18-1-1-10012823.
+    (
+        re.compile(r'http://tuidang.epochtimes.com/index/showpost/id/\d*'
+        ),
+        '',
+    ),
+    # This observation is made with `url_pattern = 17-12-30-10009407
+    #,17-12-30-10009405.
+    (
+        re.compile(r'(#? 感謝您關注新聞看點,再會。)?\s?(#?\s?大紀元新聞看點製作組)+'
+        ),
+        '',
+    )
 ]
 TITLE_SUB_PATTERNS: List[Tuple[re.Pattern, str]] = [
     (
