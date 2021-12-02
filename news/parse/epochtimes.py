@@ -384,19 +384,13 @@ ARTICLE_SUB_PATTERNS: List[Tuple[re.Pattern, str]] = [
         ),
         '',
     ),
-    # This observation is made with `url_pattern = 18-1-1-10012823.
-    (
-        re.compile(r'http://tuidang.epochtimes.com/index/showpost/id/\d*'
-        ),
-        '',
-    ),
     # This observation is made with `url_pattern = 17-12-30-10009407
     #,17-12-30-10009405.
     (
-        re.compile(r'(#? 感謝您關注新聞看點,再會。)?\s?(#?\s?大紀元新聞看點製作組)+'
+        re.compile(r'(#? 感謝您關注新聞看點.再會。)?\s?(#?\s?大紀元新聞看點製作組)+'
         ),
         '',
-    )
+    ),
     # This observation is made with `url_pattern = 19-12-22-11738876,
     # 19-5-19-11266537`.
     (
